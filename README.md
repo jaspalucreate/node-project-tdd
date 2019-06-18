@@ -25,14 +25,17 @@
             npm link package-name will create a symbolic link from globally-installed 
             package-name to node_modules/ of the current folder.
             Note that package-name is taken from package.json, not from directory name.
+            
+            After these two commands, run the command:
+            express app_name
 
-   - **install express from the command line using express-generator**
+   - **changed the directory path to app**
         >
-            npm install -g express-generator
+            cd app_name
 
-   - **Set permissions**
+   - **Install the dependencies**
        >
-            sudo chmod -R 755 { project-path }
+            npm install
 
    - **Go to project directory**
        > 
