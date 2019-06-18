@@ -12,7 +12,7 @@
 ## How to start a new project in node.js
   
     Open CLI as administrator and run following commands to set up at local:
-   - **install express framework, run the command**
+   - **Install express framework, run the command**
         >
             
             express app_name
@@ -32,7 +32,7 @@
             After these two commands, run the command:
             express app_name
 
-   - **changed the directory path to app**
+   - **Changed the directory path to app**
         >
             cd app_name
 
@@ -40,42 +40,34 @@
        >
             npm install
 
-   - **Go to project directory**
-       > 
-            cd ucreate-review-tool 
-
-   - **Copy .env.example to .env**
-       > 
-            cp .env.example .env
-   - **Install node.js**
-      > 
-            To install node.js follow below url :
-            https://nodejs.org/en/download/
-   - **Install the dependencies**    
-      >
-            npm install
-  
 
 
-# Database installation
+## Database installation
    - **How to install postgresql ( Ubuntu )**
      >
-        sudo apt-get install postgresql postgresql-contrib
+             
+         sudo apt-get install postgresql postgresql-contrib
+         
    - **Which UI being used to connect to DB**
      >
-        pgadmin
+         
+         pgadmin
+        
    - **Create  database**
      >
+            
          1. login to pgsql
-         	 sudo psql -h localhost -U postgres    
-         2. create database review-tool
-         	 create database review-tool
+         	  - sudo psql -h localhost -U postgres    
+         2. create database 
+         	  - create database database_name
          
 
-# Post Installation steps
- - **Run database migrations**
-    >
-        sequelize db:migrate
+## Post Installation steps
+   - **Install the sequelize ORM **
+     >
+                
+         npm install sequelize --save
+         npm install --save pg pg-hstore //used to connect with postgres DB
 
 - **Start server**
     >
