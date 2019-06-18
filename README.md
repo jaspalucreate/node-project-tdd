@@ -12,13 +12,15 @@
 ## How to start a new project in node.js
   
     Open CLI as administrator and run following commands to set up at local:
-   - **install express framework, run the cmd**
+   - **install express framework, run the command**
         >
             express app_name
             
             In case 'express' is not recognized as an internal or external command, then use follwoing commands:
- a) npm install -g express-generator
- b) npm link express
+            npm install -g express-generator
+            npm link express
+            
+            npm link package-name will create a symbolic link from globally-installed package-name to node_modules/ of the current folder. Note that package-name is taken from package.json, not from directory name.
 
    - **install express from the command line using express-generator**
         >
