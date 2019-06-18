@@ -73,11 +73,11 @@
 
    - **Create first migration using the below command:**
        >
-         sequelize model:generate --name User --attributes name:string, username:string, email:string, password:string
+         sequelize model:generate --name User --attributes name:string, username:string, email:string
    
-   - **Create first migration using the below command:**
+   - **Create seeder using the below command:**
        >
-         sequelize model:generate --name User --attributes name:string, username:string, email:string, password:string
+         node_modules/.bin/sequelize seed:generate --name User
 
 ## External Services/API Reference
 - **Email Service**
