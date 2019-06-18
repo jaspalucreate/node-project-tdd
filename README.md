@@ -14,19 +14,7 @@
     Open CLI as administrator and run following commands to set up at local:
    - **install express framework, run the command**
         >
-            express app_name
             
-            In case 'express' is not recognized as an internal or external command,
-            then run the following commands:
-            
-            npm install -g express-generator
-            npm link express
-            
-            npm link package-name will create a symbolic link from globally-installed 
-            package-name to node_modules/ of the current folder.
-            Note that package-name is taken from package.json, not from directory name.
-            
-            After these two commands, run the command:
             express app_name
 
    - **In case 'express' is not recognized as an internal or external command**
