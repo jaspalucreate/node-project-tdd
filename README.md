@@ -57,22 +57,27 @@
      >
             
          1. login to pgsql
-         	  - sudo psql -h localhost -U postgres    
+         	 - sudo psql -h localhost -U postgres    
          2. create database 
-         	  - create database database_name
+         	 - create database database_name
          
 
 ## Post Installation steps
    - **Install the sequelize ORM **
-     >
-                
+       >   
+         
          npm install sequelize --save
-         npm install --save pg pg-hstore //used to connect with postgres DB
+         npm install --save pg pg-hstore  //used to connect with postgres DB
+         npm install sequelize-cli --save  //used to run the sequelize commands in terminal
+         node_modules/.bin/sequelize init // create the models, migrations, seeders, config folders
 
-- **Start server**
-    >
-        npm start
-        The API will be running on http://localhost:4000 now [may differ in case port already in use]
+   - **Create first migration using the below command:**
+       >
+         sequelize model:generate --name User --attributes name:string, username:string, email:string, password:string
+   
+   - **Create first migration using the below command:**
+       >
+         sequelize model:generate --name User --attributes name:string, username:string, email:string, password:string
 
 ## External Services/API Reference
 - **Email Service**
